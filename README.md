@@ -3,6 +3,7 @@ dotfiles
 
 Collection of various config files
 
-## Vim
-
-run ```git submodule init && git submodule update``` before starting vim
+    cd
+    git clone https://github.com/mahescho/dotfiles.git
+    cd dotfiles
+    ./initdot.sh
