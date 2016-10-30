@@ -12,7 +12,6 @@ filetype plugin indent on
 color smyck
 
 " Add line numbers
-set number
 set ruler
 
 " Set encoding
