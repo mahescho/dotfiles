@@ -28,7 +28,7 @@ set ruler
 set cursorline
 highlight CursorLine gui=underline cterm=underline guibg=#000000
 autocmd InsertEnter * highlight CursorLine guibg=#000050 guifg=fg ctermbg=234
-autocmd InsertLeave * highlight CursorLine guibg=none guifg=fg ctermbg=none
+autocmd InsertLeave * highlight CursorLine guibg=#000000 guifg=fg ctermbg=none
 
 " rembember cursor position
 if has("autocmd")
@@ -116,7 +116,7 @@ let g:erlangHighlightErrors = 1
 let g:jedi#popup_on_dot = 0
 
 " powerline
-set rtp+=/usr/lib/python2.7/dist-packages/powerline/matchers/vim/
+set rtp+=/usr/lib/python2.7/dist-packages/powerline/matchers/vim
 " Always show statusline
 set laststatus=2
 
