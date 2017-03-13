@@ -116,7 +116,7 @@ let g:erlangHighlightErrors = 1
 let g:jedi#popup_on_dot = 0
 
 " powerline
-set rtp+=/usr/lib/python2.7/dist-packages/powerline/matchers/vim
+set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
 " Always show statusline
 set laststatus=2
 
