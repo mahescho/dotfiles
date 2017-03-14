@@ -37,6 +37,8 @@ endif
 
 " map leader to komma
 let mapleader = ","
+let g:mapleader = ","
+
 
 " Set encoding
 set encoding=utf-8
