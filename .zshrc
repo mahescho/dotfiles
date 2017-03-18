@@ -55,3 +55,23 @@ POWERLEVEL9K_DIR_HOME_FOREGROUND="white"
 POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND="white"
 POWERLEVEL9K_DIR_DEFAULT_FOREGROUND="white"
 
+PLATTFORM='unknown'
+unamestr=$(uname)
+if [[ "$unamestr" == 'Linux' ]]; then
+   PLATTFORM='linux'
+elif [[ "$unamestr" == 'FreeBSD' ]]; then
+   PLATTFORM='freebsd'
+fi
+
+if [[ $PLATTFORM == 'linux' ]]; then
+   alias ls='ls --color=auto'
+   alias ll='ls -l --color=auto'
+   alias lll='ls -la --color=auto'
+elif [[ $PLATTFORM == 'freebsd' ]]; then
+   alias ls='ls -G'
+   alias ll='ls -l -G'
+   alias lll='ls -la -G'
+fi
+
+
+
