@@ -9,9 +9,9 @@ export TERM="xterm-256color"
 autoload -U compinit
 compinit -i
 
-alias vi='TERM=xterm;vim'
-alias scp='noglob scp'
-alias rsync='noglob rsync'
+alias vi="TERM=xterm;vim"
+alias scp="noglob scp"
+alias rsync="noglob rsync"
 
 export PAGER="most"
 
@@ -36,14 +36,14 @@ setopt HIST_IGNORE_DUPS
 #add timestamp for each entry
 setopt EXTENDED_HISTORY
 
-alias allhistory='history 1'
+alias allhistory="history 1"
 
 #
 # powerline
 #
 source  ~/dotfiles/powerlevel9k/powerlevel9k.zsh-theme
 
-POWERLEVEL9K_MODE='awesome-patched'
+POWERLEVEL9K_MODE="awesome-patched"
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir rbenv)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status history vcs)
@@ -55,22 +55,22 @@ POWERLEVEL9K_DIR_HOME_FOREGROUND="white"
 POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND="white"
 POWERLEVEL9K_DIR_DEFAULT_FOREGROUND="white"
 
-PLATTFORM='unknown'
+PLATTFORM="unknown"
 unamestr=$(uname)
-if [[ "$unamestr" == 'Linux' ]]; then
-   PLATTFORM='linux'
-elif [[ "$unamestr" == 'FreeBSD' ]]; then
-   PLATTFORM='freebsd'
+if [[ "$unamestr" = "Linux" ]]; then
+   PLATTFORM="linux"
+elif [[ "$unamestr" = "FreeBSD" ]]; then
+   PLATTFORM="freebsd"
 fi
 
-if [[ $PLATTFORM == 'linux' ]]; then
-   alias ls='ls --color=auto'
-   alias ll='ls -l --color=auto'
-   alias lll='ls -la --color=auto'
-elif [[ $PLATTFORM == 'freebsd' ]]; then
-   alias ls='ls -G'
-   alias ll='ls -l -G'
-   alias lll='ls -la -G'
+if [[ $PLATTFORM = "linux" ]]; then
+   alias ls="ls --color=auto"
+   alias ll="ls -l --color=auto"
+   alias lll="ls -la --color=auto"
+elif [[ $PLATTFORM = 'freebsd' ]]; then
+   alias ls="ls -G"
+   alias ll="ls -l -G"
+   alias lll="ls -la -G"
 fi
 
 
