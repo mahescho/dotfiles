@@ -1,6 +1,7 @@
 #!/bin/sh
 
 git submodule init
+git submodule sync
 git submodule update
 
 ln -s $HOME/dotfiles/.z* $HOME
